@@ -1,0 +1,73 @@
+% Include config file
+\include{config}
+
+% Title and Author information
+\title{Lorem Ipsum}
+\author{Dolor Sit, Amet Consectetuer}
+\date{}
+
+% Begin Document
+\begin{document}
+
+% Footer
+\fancyfoot[L]{
+\sffamily\fontsize{25}{25}\selectfont
+\transparent{0.0}.\\.\\
+\transparent{1.0}Ihr Kontakt: Lorem Ipsum \\
+FH Brandenburg, Postfach 2132\\
+D-14737 Brandenburg, Germany\\E-Mail: \texttt{loremipsum@fh-brandenburg.de}
+}
+\fancyfoot[C]{
+\sffamily\fontsize{25}{25}\selectfont
+Dieses Poster ist im Rahmen der Lehrveranstaltung \emph{LaTeX Vorlage - Lorem Ipsum} im Sommer-/Wintersemester 20XX/20YY entstanden.
+}
+\fancyfoot[R]{
+\sffamily\fontsize{25}{25}\selectfont
+\transparent{0.0}.\\.\\
+\transparent{1.0}Danksagungen:\\
+Wir bedanken uns bei \LaTeX.
+}
+
+% Begin Title
+\sf
+\begin{minipage}[b]{10cm}
+	\vspace{0mm}	
+	\hspace{-50mm}	
+	\includegraphics[height=83mm]{images/FHB_FB-W_Logo_RGB.eps}
+\end{minipage}
+\begin{minipage}{480mm}
+	\vspace{-30mm}	 
+	\hspace{-20mm}	
+	\color{fhborange}\rule{550mm}{35mm}
+\end{minipage}
+
+\vspace{-5mm}
+
+\begin{minipage}[b]{450mm}
+	\hspace{-30mm}	
+	\vspace{-25mm}
+	\color{fhborange}\rule{580mm}{90mm}
+	\vspace{-60mm}	 \\
+	\color{fhbwhite}{\Huge 
+		\thetitle
+		\\ \huge 
+		\theauthor
+	}
+\end{minipage}
+ 
+\vspace{4cm}
+
+% Begin content
+\begin{multicols}{3}
+  \large
+
+  \sf
+
+  % Include content
+
+  \input{includes/text}
+  % Include literature
+  % Edit in literature.bib and cite with \citep
+  \bibliography{literature}
+\end{multicols}
+\end{document}

@@ -1,0 +1,88 @@
+\documentclass[12pt]{article} % use larger type; default would be 10pt
+\RequirePackage{multicol}
+\columnsep=30mm
+
+% Calculations
+\usepackage{calc}
+
+% Titling package
+\usepackage{titling}
+
+% Fonts and encoding
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{float}
+\usepackage{transparent}
+
+% Bibliography
+\usepackage[square]{natbib}
+\bibpunct[, ]{[}{]}{;}{a}{ }{,}
+\bibliographystyle{dinat}
+\renewcommand*{\bibfont}{\interlinepenalty 10000\relax}
+
+% Custom commands
+\renewcommand{\Huge}{\fontsize{78}{46}\selectfont}
+\renewcommand{\huge}{\fontsize{48}{48}\selectfont}
+\renewcommand{\Large}{\fontsize{30}{30}\selectfont}
+\renewcommand{\large}{\fontsize{24}{24}\selectfont}
+
+% Examples
+\usepackage{lipsum}
+
+%%% PAGE DIMENSIONS
+\usepackage[
+	a1paper, % or letterpaper (US) or a5paper or....
+    margin=2in, % for example, change the margins to 2 inches all round
+    voffset=-4cm, % vertical offset
+    ignorehead,
+]{geometry} % to change the page dimensions
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage[font={large,sf}]{caption}
+\renewcommand{\figurename}{Abb.}
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+\usepackage[hyphenbreaks]{breakurl}
+\usepackage[hyphens]{url}
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{Hallo}\cfoot{\thepage}\rfoot{}
+\renewcommand{\footrulewidth}{2pt}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%%%%%%%%%%%%%%%%
+
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+%-- einige FHB-Poster-Sachen
+\RequirePackage{color}%
+\definecolor{fhborange}{cmyk}{0,0.56,1.0,0}
+\definecolor{fhbwhite}{cmyk}{0.0,0.0,0.0,0.0}
+\definecolor{fhbblue}{cmyk}{0.7,0,0.07,0}
+\definecolor{fhbred}{cmyk}{0.03,0.93,0.79,0.12}
